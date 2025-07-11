@@ -123,7 +123,7 @@ export default function Home() {
 
                   <Button
                     component={Link}
-                    href={`/match/${match.matchId}`}
+                    href={`/match-details?matchId=${match.matchId}`}
                     variant="contained"
                     sx={{ mt: 2 }}
                   >

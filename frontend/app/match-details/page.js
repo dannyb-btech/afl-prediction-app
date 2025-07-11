@@ -1,10 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Typography, Card, CardContent, Grid, CircularProgress, Alert, Button, Container, TextField, Box, FormControlLabel, Switch, FormGroup, FormControl, FormLabel, Checkbox, Accordion, AccordionSummary, AccordionDetails, AppBar, Toolbar } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-export default function MatchDetailsClient({ matchId }) {
+export default function MatchDetails() {
+  const searchParams = useSearchParams();
+  const matchId = searchParams.get('matchId');
+  
   const [players, setPlayers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -83,6 +87,15 @@ export default function MatchDetailsClient({ matchId }) {
     // Show if any filtered betting opportunity is >= threshold
     return filteredBets.some(bet => (bet.probability * 100) >= bettingThreshold);
   });
+
+  if (!matchId) {
+    return (
+      <Container sx={{ mt: 4 }}>
+        <Alert severity="error">No match ID provided</Alert>
+        <Button component={Link} href="/" sx={{ mt: 2 }}>Back to Matches</Button>
+      </Container>
+    );
+  }
 
   return (
     <>
