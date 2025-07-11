@@ -35,9 +35,10 @@ export default function Home() {
   // Filter matches based on selected round
   useEffect(() => {
     if (selectedRound === 'upcoming') {
-      // Show only matches that haven't started yet
-      const now = new Date();
-      const upcoming = matches.filter(match => new Date(match.matchDate) > now);
+      // Show matches from today onwards
+      const today = new Date();
+      today.setHours(0, 0, 0, 0); // Start of today
+      const upcoming = matches.filter(match => new Date(match.matchDate) >= today);
       setFilteredMatches(upcoming);
     } else if (selectedRound === 'all') {
       setFilteredMatches(matches);
