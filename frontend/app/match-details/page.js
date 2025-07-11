@@ -1,11 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Typography, Card, CardContent, Grid, CircularProgress, Alert, Button, Container, TextField, Box, FormControlLabel, Switch, FormGroup, FormControl, FormLabel, Checkbox, Accordion, AccordionSummary, AccordionDetails, AppBar, Toolbar } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-export default function MatchDetails() {
+function MatchDetailsContent() {
   const searchParams = useSearchParams();
   const matchId = searchParams.get('matchId');
   
@@ -219,5 +219,18 @@ export default function MatchDetails() {
         </Grid>
       </Container>
     </>
+  );
+}
+
+export default function MatchDetails() {
+  return (
+    <Suspense fallback={
+      <Container sx={{ mt: 4 }}>
+        <CircularProgress />
+        <Typography>Loading match details...</Typography>
+      </Container>
+    }>
+      <MatchDetailsContent />
+    </Suspense>
   );
 }
