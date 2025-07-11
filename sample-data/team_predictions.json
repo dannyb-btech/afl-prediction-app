@@ -1,0 +1,32 @@
+{
+    "id": "team_prediction_20251702",
+    "predictionType": "team_match",
+    "matchId": "20251702",
+    "round": 17,
+    "year": 2025,
+    "homeTeam": "Carlton",
+    "awayTeam": "Collingwood",
+    "venue": "MCG",
+    "matchDate": "2025-07-04",
+    "generatedAt": "2025-07-01T05:45:17.580471",
+    "homeWinProbability": 0.3786856031136637,
+    "awayWinProbability": 0.6213143968863363,
+    "predictedWinner": "Collingwood",
+    "predictedMargin": 46.32211096178789,
+    "predictedTotal": 242.85096421983502,
+    "confidence": 0.894939225188387,
+    "venueBoost": 0.020000000000000018,
+    "betting": {
+        "winner_bet": "AWAY",
+        "winner_confidence": 0.7573712062273275,
+        "line_bet": "HOME_COVER",
+        "total_bet": "OVER"
+    },
+    "modelVersion": "1.0",
+    "dataQuality": "standard",
+    "_rid": "BitbAJJ1b94tAAAAAAAAAA==",
+    "_self": "dbs/BitbAA==/colls/BitbAJJ1b94=/docs/BitbAJJ1b94tAAAAAAAAAA==/",
+    "_etag": "\"0300c505-0000-1a00-0000-686375ec0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1751348716
+}

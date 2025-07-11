@@ -1,0 +1,73 @@
+{
+	"id": "player_prediction_20251701_Luke_Davies-Uniacke",
+	"predictionType": "player_performance",
+	"matchId": "20251701",
+	"round": 17,
+	"year": 2025,
+	"homeTeam": "North Melbourne",
+	"awayTeam": "Western Bulldogs",
+	"venue": "Marvel Stadium",
+	"matchDate": "2025-07-03",
+	"generatedAt": "2025-07-01T05:45:16.858116",
+	"player": "Luke Davies-Uniacke",
+	"team": "North Melbourne",
+	"isHomePlayer": true,
+	"opposition": "Western Bulldogs",
+	"dataQuality": {
+		"totalGames": 52,
+		"recentGamesUsed": 8,
+		"confidenceLevel": "High",
+		"confidenceScore": 1
+	},
+	"predictions": {
+		"disposals": 27.2,
+		"goals": 0.3,
+		"tackles": 4.1,
+		"marks": 3.1,
+		"supercoach": 100
+	},
+	"marketProbabilities": {
+		"disposals15Plus": 0.95,
+		"disposals20Plus": 0.95,
+		"disposals25Plus": 0.701,
+		"goals1Plus": 0.227,
+		"goals2Plus": 0.05,
+		"tackles5Plus": 0.308
+	},
+	"bettingOpportunities": [
+		{
+			"market": "Disposals 15+",
+			"probability": 0.95,
+			"strength": "strong",
+			"statType": "disposals",
+			"recommendedStake": "large"
+		},
+		{
+			"market": "Disposals 20+",
+			"probability": 0.95,
+			"strength": "strong",
+			"statType": "disposals",
+			"recommendedStake": "large"
+		},
+		{
+			"market": "Disposals 25+",
+			"probability": 0.7006143257954649,
+			"strength": "good",
+			"statType": "disposals",
+			"recommendedStake": "medium"
+		}
+	],
+	"baseAverages": {
+		"disposals": 27,
+		"goals": 0.25,
+		"tackles": 4.125,
+		"marks": 3.125,
+		"supercoach": 100
+	},
+	"modelVersion": "1.0",
+	"_rid": "BitbAJJ1b94CAAAAAAAAAA==",
+	"_self": "dbs/BitbAA==/colls/BitbAJJ1b94=/docs/BitbAJJ1b94CAAAAAAAAAA==/",
+	"_etag": "\"03006d05-0000-1a00-0000-686375ea0000\"",
+	"_attachments": "attachments/",
+	"_ts": 1751348714
+}
